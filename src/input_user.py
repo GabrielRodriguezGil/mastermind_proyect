@@ -1,24 +1,21 @@
 def color_input():
-    user_input = [
-        i.lower
-        for i in input(
-            "Introduce los cuatro colores que quieras dentro de estos colores: "
-            "Rojo, Azul, Verde, Amarillo, Morado, Naranja: "
-        ).split(" ")
-    ]
+    user_input = (
+        input(
+            "Introduce 4 colores separados por espacios de estos(rojo, azul, verde, amarillo, morado, naranja): "
+        )
+        .lower()
+        .split()
+    )
 
-    if (
-        any(user_input)
-        not in [
-            "rojo",
-            "azul",
-            "verde",
-            "amarillo",
-            "morado",
-            "naranja",
-        ]
-        or len(user_input) != 4
-    ):
-        raise ValueError("No has puesto valores correctos")
+    colors = ["rojo", "azul", "verde", "amarillo", "morado", "naranja"]
+    colors_set = set(colors)
 
-    return user_input
+    user_input_set = set(user_input)
+    if not user_input_set.issubset(colors_set) or len(user_input) != 4:
+        raise SystemExit("No has puesto valores correctos")
+
+    else:
+        return user_input_set
+
+
+color_input()
