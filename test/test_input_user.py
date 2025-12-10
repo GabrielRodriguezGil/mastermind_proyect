@@ -7,7 +7,7 @@ colores = [
     "verde",
     "amarillo",
     "morado",
-    "naranja",
+    "blanco",
 ]
 
 
