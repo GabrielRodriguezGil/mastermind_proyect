@@ -5,7 +5,7 @@ import pytest
 @pytest.mark.parametrize(
     "color_combination, solution, result",
     [
-        (["Red", "Red", "Red", "Red"],["Red", "Green", "Blue", "Red"], 2)
+        (["Red", "Red", "Red", "Red"],["Red", "Green", "Blue", "Red"], 2),
         (["Red", "Green", "Blue", "Red"],["Red", "Green", "Blue", "Red"], 4),
         (["Red", "Red", "Red", "Red"],["Green", "Blue", "Yellow", "Pink"], -4),
         (["Pink", "Yellow", "Blue", "Green"],["Green", "Blue", "Yellow", "Pink"], 0)
