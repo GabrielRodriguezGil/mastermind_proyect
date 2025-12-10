@@ -3,11 +3,10 @@ import pytest
 
 @pytest.mark.check_colors
 @pytest.mark.parametrize(
-    "color_combination, solution, result"[
+    "color_combination, solution, result",
+    [
         (["Red","Red","Red","Red"],["Red", "Green", "Blue", "Red"],2)
-
     ]
-
 )
 
 
