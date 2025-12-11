@@ -1,4 +1,4 @@
-from src.check_colors import mix_generations
+from src.mix_generations import mix_generations
 import pytest
 
 @pytest.mark.mix_generations
