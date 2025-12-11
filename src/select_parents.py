@@ -12,4 +12,4 @@ def select_parents(generation, last_try):
         generation, weights=fitness_values, k=int((len(generation) / 100) * 40)
     )
 
-    return parents
+    return parents, fitness_values
