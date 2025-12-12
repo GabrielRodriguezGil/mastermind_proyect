@@ -1,9 +1,0 @@
-[[marker]]
-name = "check_colors"
-description = "Pruebas para la función `check_colors` (puntuación del juego Mastermind)."
-
-[[marker]]
-name = "test_generate_combinations"
-description = "Pruebas que verifican la generación de combinaciones de colores."
-
-
