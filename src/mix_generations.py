@@ -25,30 +25,3 @@ def mix_generations(parents):
             random.sample(colors, 1)
         )
     return childs
-
-
-if __name__ == "__main__":
-    mix_generations(
-        [
-            ["blanco", "azul", "verde", "verde"],
-            ["rojo", "blanco", "verde", "morado"],
-            ["morado", "rojo", "rojo", "blanco"],
-            ["rojo", "rojo", "verde", "amarillo"],
-            ["rojo", "blanco", "amarillo", "blanco"],
-            ["blanco", "amarillo", "blanco", "amarillo"],
-            ["verde", "rojo", "blanco", "amarillo"],
-            ["verde", "verde", "verde", "rojo"],
-            ["morado", "morado", "azul", "amarillo"],
-            ["blanco", "rojo", "morado", "morado"],
-            ["morado", "verde", "blanco", "rojo"],
-            ["amarillo", "amarillo", "verde", "blanco"],
-            ["verde", "azul", "verde", "verde"],
-            ["blanco", "azul", "verde", "amarillo"],
-            ["blanco", "verde", "morado", "verde"],
-            ["amarillo", "azul", "verde", "azul"],
-            ["rojo", "blanco", "rojo", "blanco"],
-            ["verde", "morado", "morado", "blanco"],
-            ["amarillo", "verde", "amarillo", "blanco"],
-            ["azul", "morado", "blanco", "amarillo"],
-        ]
-    )
