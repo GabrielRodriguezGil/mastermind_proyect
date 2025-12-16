@@ -1,13 +1,22 @@
 
 def check_colors(color_combination , solution):
-    successe_percentage = 0
-    for position, color in enumerate(color_combination):
-        if color == solution[position]:
-            successe_percentage += 3
-        elif color in solution:
-            successe_percentage += 2
+    color_combination_copy = color_combination[:]
+    solution_copy = solution[:]
+    success_percentage = 0
+    right_color = []
+
+    for position, color in enumerate(color_combination_copy):
+        if color == solution_copy[position]:
+            success_percentage += 2
+            solution_copy[position] = None
+        
+
+    for color in color_combination_copy:
+        if color in solution_copy and color not in right_color:
+            success_percentage += 2
+            right_color.append(color)
         else:
-            successe_percentage += 1
+            success_percentage += 1
             
-    return successe_percentage
+    return success_percentage
 
