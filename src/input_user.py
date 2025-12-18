@@ -15,7 +15,4 @@ def color_input():
         raise SystemExit("No has puesto valores correctos")
 
     else:
-        return user_input_set
-
-
-color_input()
+        return user_input
