@@ -4,7 +4,7 @@ import pytest
 
 @pytest.mark.test_select_parents
 def test_select_parents():
-    parents, fitness_values = select_parents(
+    parents = select_parents(
         [
             ["rojo", "verde", "blanco", "rojo"],
             ["amarillo", "amarillo", "verde", "morado"],
@@ -25,7 +25,7 @@ def test_select_parents():
             ["rojo", "rojo", "blanco", "azul"],
             ["verde", "amarillo", "amarillo", "morado"],
             ["verde", "amarillo", "amarillo", "verde"],
-            ["blanco", "verde", "verde", "morado"],
+            ["blanco", "verde", "verde", "morado"]
         ],
         ["rojo", "rojo", "blanco", "azul"],
     )
