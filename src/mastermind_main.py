@@ -1,13 +1,13 @@
 """Mastermind solver entry point."""
 
-from input_user import color_input
-from generate_combinations import generate_conbinations
-from create_fitness_dictionary import create_fitness_dictionary
-from select_parents import select_parents
-from mix_generations import mix_generations
-from control_population import control_population
-from interpretate_dictionary import interpretate_dictionary
-from return_colors import return_colors
+from src.input_user import color_input
+from src.generate_combinations import generate_conbinations
+from src.create_fitness_dictionary import create_fitness_dictionary
+from src.select_parents import select_parents
+from src.mix_generations import mix_generations
+from src.control_population import control_population
+from src.interpretate_dictionary import interpretate_dictionary
+from src.return_colors import return_colors
 
 
 BEST_FITNESS = 12
