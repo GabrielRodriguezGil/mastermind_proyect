@@ -16,6 +16,3 @@ def color_input():
 
     else:
         return user_input
-
-
-color_input()
