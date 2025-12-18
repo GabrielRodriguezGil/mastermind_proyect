@@ -19,11 +19,13 @@ def mastermind():
         fitness_values = interpretate_dictionary(fitness_dictionary, last_population)
         parents = select_parents(last_population, solution)
         childs = mix_generations(parents)
-        fitness_dictionary = create_fitness_dictionary(
-            last_population + childs, solution
-        )
+        last_population.extend(childs)
+        fitness_dictionary = create_fitness_dictionary(last_population, solution)
         fitness_values = interpretate_dictionary(fitness_dictionary, last_population)
         next_population = control_population(last_population, fitness_values, childs)
         tries += 1
         last_population = next_population
+        fitness_values = interpretate_dictionary(fitness_dictionary, last_population)
         best_try = max(fitness_values)
+
+        print(return_colors(last_population[fitness_values.index(best_try)]), best_try)
