@@ -1,4 +1,4 @@
-from src.check_colors import check_colors
+from check_colors import check_colors
 
 
 def create_fitness_dictionary(population, solution):
