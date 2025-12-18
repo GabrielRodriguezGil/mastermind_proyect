@@ -12,7 +12,7 @@ def color_input():
 
     user_input_set = set(user_input)
     if not user_input_set.issubset(colors_set) or len(user_input) != 4:
-        raise SystemExit("No has puesto valores correctos")
+        raise SystemExit("No has puesto valores correctos, vuelve a intentarlo")
 
     else:
         return user_input
