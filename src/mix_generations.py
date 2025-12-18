@@ -23,5 +23,5 @@ def mix_generations(parents):
     for _ in range(mutation_number):
         childs[random.randint(0, len(childs) - 1)][random.randint(0, 3)] = (
             random.sample(colors, 1)
-        )
+        )[0]
     return childs
