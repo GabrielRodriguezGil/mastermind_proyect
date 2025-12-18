@@ -1,4 +1,4 @@
-from check_colors import check_colors
+from src.check_colors import check_colors
 import random
 
 
