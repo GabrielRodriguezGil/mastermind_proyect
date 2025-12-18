@@ -27,8 +27,3 @@ def mastermind():
         tries += 1
         last_population = next_population
         best_try = max(fitness_values)
-        print(return_colors(last_population[fitness_values.index(best_try)]))
-
-
-if __name__ == "__main__":
-    mastermind()
