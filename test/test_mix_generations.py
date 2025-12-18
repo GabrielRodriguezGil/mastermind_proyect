@@ -1,3 +1,5 @@
+import sys
+sys.path.append("..")
 from src.mix_generations import mix_generations
 import pytest
 
@@ -5,10 +7,10 @@ import pytest
 @pytest.mark.parametrize(
     "parents, childs",
     [
-        ([["Red", "Red", "Red", "Red"],["Red", "Green", "Blue", "Red"]], [["Red", "Red", "Blue", "Red"],["Red", "Green", "Red", "Red"]]),
-        ([["Red", "Green", "Yellow", "Red"],["Red", "Green", "Blue", "Red"]],[["Red", "Green", "Blue", "Red"],["Red", "Green", "Yellow", "Red"]]),
-        ([["Red", "Red", "Red", "Red"],["Green", "Blue", "Yellow", "Pink"]], [["Red", "Red","Yellow", "Pink"],["Green", "Blue", "Red", "Red"]]),
-        ([["Pink", "Yellow", "Blue", "Green"],["Green", "Blue", "Yellow", "Pink"]], [["Pink", "Yellow","Yellow", "Pink"],["Green", "Blue", "Blue", "Green"]])
+        ([["Red", "Red", "Red", "Red"],["Red", "Green", "Blue", "Red"]], [["Red", "Green", "Red", "Red"],["Red", "Red", "Blue", "Red"]]),
+        ([["Red", "Green", "Yellow", "Red"],["Red", "Green", "Blue", "Red"]],[["Red", "Green", "Yellow", "Red"],["Red", "Green", "Blue", "Red"]]),
+        ([["Red", "Red", "Red", "Red"],["Green", "Blue", "Yellow", "Pink"]], [["Red", "Blue","Red", "Pink"],["Green", "Red", "Yellow", "Red"]]),
+        ([["Pink", "Yellow", "Blue", "Green"],["Green", "Blue", "Yellow", "Pink"]], [["Pink", "Blue","Blue", "Pink"],["Green", "Yellow", "Yellow", "Green"]])
     ]
 )
 
