@@ -1,0 +1,19 @@
+[[marker]]
+name = "check_colors"
+description = "Pruebas para la función `check_colors` (puntuación del juego Mastermind)."
+
+[[marker]]
+name = "test_generate_combinations"
+description = "Pruebas que verifican la generación de combinaciones de colores."
+
+[[marker]]
+name = "mix_generations"
+description = "Pruebas para comrobar que mezcla correctamente los individuos"
+
+[[marker]]
+name = "test_control_population"
+description = "Pruebas para comrobar que se selecciona quien sobrevive"
+
+[[marker]]
+name = "test_select_parents"
+description = "Pruebas para que seleccionar los futuros padres"
