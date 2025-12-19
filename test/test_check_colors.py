@@ -8,7 +8,7 @@ import pytest
         (["Red", "Red", "Red", "Red"],["Red", "Green", "Blue", "Red"], 8),
         (["Red", "Green", "Blue", "Red"],["Red", "Green", "Blue", "Red"], 12),
         (["Red", "Red", "Red", "Red"],["Green", "Blue", "Yellow", "Pink"], 4),
-        (["Pink", "Yellow", "Blue", "Green"],["Green", "Blue", "Yellow", "Pink"],8)
+        (["Pink", "Yellow", "Blue", "Green"],["Green", "Blue", "Yellow", "Pink"],8),
         (["Red", "Red", "Red", "Red"], ["Green", "Green", "Green", "Green"],4), 
         (["Red", "Green", "Blue", "Yellow"], ["Red", "Blue", "Green", "Yellow"],10),
         (["Red", "Red", "Green", "Green"], ["Red", "Green", "Red", "Green"],10),
