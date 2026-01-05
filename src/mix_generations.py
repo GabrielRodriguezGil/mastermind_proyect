@@ -1,5 +1,5 @@
 import random
-
+from src.global_constants import MUTATION_RATE
 
 def mix_generations(parents):
     colors = ["rojo", "azul", "verde", "amarillo", "morado", "blanco"]
@@ -13,12 +13,10 @@ def mix_generations(parents):
         parents_copy.remove(pair_parents[0])
         parents_copy.remove(pair_parents[1])
 
-    ONE_PERCENTAGE = round(len(childs) * 0.01)
+    mutation_number = round(len(childs) * MUTATION_RATE)
 
-    if ONE_PERCENTAGE <= 0.5:
+    if mutation_number < 1:
         mutation_number = 1
-    else:
-        mutation_number = ONE_PERCENTAGE
 
     for _ in range(mutation_number):
         childs[random.randint(0, len(childs) - 1)][random.randint(0, 3)] = (

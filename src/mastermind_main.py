@@ -8,10 +8,10 @@ from src.mix_generations import mix_generations
 from src.control_population import control_population
 from src.interpretate_dictionary import interpretate_dictionary
 from src.return_colors import return_colors
+from src.global_constants import MAX_ATTEMPTS, BEST_FITNESS
 
 
-BEST_FITNESS = 12
-MAX_ATTEMPTS = 14
+
 
 
 def mastermind():

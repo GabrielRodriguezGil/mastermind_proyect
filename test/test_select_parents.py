@@ -1,11 +1,8 @@
 from src.select_parents import select_parents
+from src.global_constants import PARENT_SELECTION_PERCENTAGE
 import pytest
 
-
-@pytest.mark.test_select_parents
-def test_select_parents():
-    parents = select_parents(
-        [
+population =         [
             ["rojo", "verde", "blanco", "rojo"],
             ["amarillo", "amarillo", "verde", "morado"],
             ["azul", "azul", "blanco", "verde"],
@@ -26,7 +23,9 @@ def test_select_parents():
             ["verde", "amarillo", "amarillo", "morado"],
             ["verde", "amarillo", "amarillo", "verde"],
             ["blanco", "verde", "verde", "morado"]
-        ],
-        ["rojo", "rojo", "blanco", "azul"],
-    )
-    assert len(parents) == 8
+        ]
+
+@pytest.mark.test_select_parents
+def test_select_parents():
+    parents = select_parents( population,["rojo", "rojo", "blanco", "azul"])
+    assert len(parents) == len(population) * PARENT_SELECTION_PERCENTAGE
