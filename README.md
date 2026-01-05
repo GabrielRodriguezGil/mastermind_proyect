@@ -1,21 +1,42 @@
 Proyecto de algoritmo genético Mastermind
 =========================================
 
+# Indice
 
-## Historia de usuario
+- Introducción
+- Manual
 
-### Caso 1:
 
-El jugador empieza eligiendo un código de colores mediante  para que la máquina lo resuelva.
 
-Cofirmación:
-* El usuario nos da por terminal el código de palabras refiriendose a los colores.
 
-### Caso 2:
 
-El usuario quiere que la máquina lo adivine en menos de 15 intentos.
 
-Confirmación:
-* El algortimo generará una amplia variedad de combinaciones
-* El algoritmo filtrará las combinaciones hasta encontrar la correcta.
+# Introducción
 
+El proyecto incluye codigo, para un programa que resuelve el juego de mastermind mediante un algoritmo genético.
+
+Este proyecto esta hecho por:
+- Gabriel Rodríguez Gil
+- Miguel Gutierrez Pahino
+
+# Manual
+
+## Instalación
+
+1. Descargar el proyecto de GitHub:
+    
+    ![alt text](assets/img_readme/image.png)
+
+    Descargamos el zip, lo descomprimimos y abrimos la carpeta del proyecto con el editor de codigo que se use.
+
+2. Descargamos las dependencias
+    
+    Como el proyecto esta configurado con uv, solo tendremos que ejecutar en nuestra terminal del proyecto, "uv sync". Con esto, se creará el entorno virtual y se descargaran las dependencias.
+
+3. Activar el entorno virtual
+
+    Para activar el entorno en Windows usaremos: `.\.venv\Scripts\activate.ps1`
+
+    De otra manera para activar el entorno en Linux usaremos: `source .venv/bin/activate`
+
+    
