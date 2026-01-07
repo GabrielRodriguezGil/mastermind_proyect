@@ -3,19 +3,19 @@ Proyecto de algoritmo genético Mastermind
 
 # Indice
 
-- Introducción
-- Manual
-    - Instalación 
-    - Uso
-- Metodología 
-    - Historias de usuario
-    - Arquietectura
-- Diseño
-    - Diagrama de componentes
-    - Herramientas utilizadas
--Conclusión
-    - Posibles mejoras
-    - Dificultades
+- [Introducción](#introducción)
+- [Manual](#manual)
+    - [Instalación](#instalación) 
+    - [Uso](#uso)
+- [Metodología](#metodología)
+    - [Historias de usuario](#historias-de-usuario)
+    - [Arquietectura](#arquietectura)
+- [Diseño](#diseño)
+    - [Diagrama de componentes](#diagrama-de-componentes)
+    - [Herramientas utilizadas](#herramientas-utilizadas)
+-[Conclusión](#conclusión)
+    - [Posibles mejoras](#posibles-mejoras)
+    - [Dificultades](#dificultades)
     - 
 # Introducción
 
@@ -37,6 +37,16 @@ Este proyecto esta hecho por:
 2. Descargamos las dependencias
     
     Como el proyecto esta configurado con uv, solo tendremos que ejecutar en nuestra terminal del proyecto, "uv sync". Con esto, se creará el entorno virtual y se descargaran las dependencias.
+
+    Para esto necesitaremos **UV**, para instalarlo:
+
+    1. macOS y Linux:
+
+    `curl -LsSf https://astral.sh/uv/install.sh | sh`
+
+    2. Windows (PowerShell):
+
+    `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
 3. Activar el entorno virtual
 
