@@ -5,9 +5,14 @@ Proyecto de algoritmo genético Mastermind
 
 - Introducción
 - Manual
-
-
-
+    - Instalación 
+    - Uso
+- Metodología 
+    - Historias de usuario
+    - Arquietectura
+- Diseño
+    - Diagrama de componentes
+    - Herramientas utilizadas
 
 
 
@@ -20,7 +25,6 @@ Este proyecto esta hecho por:
 - Miguel Gutierrez Pahino
 
 # Manual
-
 ## Instalación
 
 1. Descargar el proyecto de GitHub:
@@ -44,12 +48,13 @@ Este proyecto esta hecho por:
 Para su uso solo hay que abrir el directorio donde se encuentra el proyecto y ejecutar `python main.py`.
 Tras ejecutarlo te pedirá una combinación con los colores posibles y te mostrará todos los intento y su puntuación.
 
-## Metodología
+# Metodología
 
 La metodología empleada en este caso fue **TDD** , en los módulos que se utilizaban random hemos usado **Property-Based Testing** para controlar si el tipo de resultado que da es el adecuado
 
 También hemos usado **Scrum** como marco de trabajo durante todo el proyecto.
 
+# Descripción técnica
 ## Historias de usuario
 
 Para las historias de usuario hemos usado la herramienta que da GitHub de "Projects" para ver nuestras historias de usuarios y poder planificarlas apropiadamente. 
@@ -73,6 +78,23 @@ Las historias de usuarios son las siguientes:
 
 ## Arquietectura
 
-## Diseño
+- Modelo: Representa los datos y la lógica central del juego: SecretCode, Attempt, Fitness. Mantiene el estado del juego.
+- Vista: Todo lo que el usuario interactúa.
+- Controlador: Coordina la interacción entre la vista y el modelo. Recibe inputs del jugador, llama al evaluador, actualiza estado, pide a la vista que muestre resultados.
+- Servicios: Funcionalidades auxiliares.
 
-    
+# Diseño
+## Diagrama de componentes
+
+![alt text](assets/img_readme/Diagrama_componentes.png)
+
+## Herramientas utilizadas
+
+- <u>**Python**</u>  
+    - **Pytest**: framework de testing utilizado para la creación y ejecución de pruebas unitarias.
+    - **Coverage**: herramienta para medir el porcentaje de código cubierto por los tests.
+    - **Pytest-sugar**: extensión de Pytest que mejora la visualización de los resultados de los tests en consola.
+    - **Colorama**: librería externa utilizada para añadir color y mejorar la salida por consola.
+    - **Matplotlib**: librería externa empleada para la visualización de datos y resultados.
+
+- <u>**Markdown**</u> 
