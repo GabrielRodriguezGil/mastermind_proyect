@@ -13,9 +13,10 @@ Proyecto de algoritmo genético Mastermind
 - Diseño
     - Diagrama de componentes
     - Herramientas utilizadas
-
-
-
+-Conclusión
+    - Posibles mejoras
+    - Dificultades
+    - 
 # Introducción
 
 El proyecto incluye codigo, para un programa que resuelve el juego de mastermind mediante un algoritmo genético.
@@ -97,4 +98,20 @@ Las historias de usuarios son las siguientes:
     - **Colorama**: librería externa utilizada para añadir color y mejorar la salida por consola.
     - **Matplotlib**: librería externa empleada para la visualización de datos y resultados.
 
-- <u>**Markdown**</u> 
+- <u>**Markdown**</u>
+
+# Conclusión
+
+En este proyecto hemos puesto en práctica todo lo aprendido en Python durante todo el primer trimestre.
+Respecto a lo aprendido después de acabar la primera versión, hemos aprendido el funcionamiento de algoritmos genéticos y el funcionamiento de librerias externas como colorama y matplotlib.
+
+## Posibles mejoras
+
+Las principales mejoras que hemos pensado fueron mejorar el apartado gráfico para que sea más agradable de usar.
+También nos gustaría mejorar la productividad del código, pensamos que podríamos haber llegado al mismo resultado
+con una población inicial no tan grande
+
+## Dificultades
+
+Las dificultades fueron todas a la hora de entender el funcionamiento de los algorítmos genéticos, sobre todo el modulo de crear nuevas familias y como reproducirlas.
+También costó la función que calcula el fitness devido a que tenía que comprobar varias características.
