@@ -7,8 +7,9 @@ def check_colors(color_combination , solution):
 
     for position, color in enumerate(color_combination_copy):
         if color == solution_copy[position]:
-            success_percentage += 2
+            success_percentage += 3
             solution_copy[position] = None
+            color_combination_copy[position] = "None"
         
 
     for color in color_combination_copy:
@@ -20,3 +21,6 @@ def check_colors(color_combination , solution):
             
     return success_percentage
 
+
+if __name__ == "__main__":
+    check_colors(["r","r","a","a"],["r","r","v","v"])
