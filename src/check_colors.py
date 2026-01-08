@@ -7,7 +7,7 @@ def check_colors(color_combination , solution):
 
     for position, color in enumerate(color_combination_copy):
         if color == solution_copy[position]:
-            success_percentage += 2
+            success_percentage += 3
             solution_copy[position] = None
             color_combination_copy[position] = "None"
         
