@@ -66,6 +66,14 @@ La metodología empleada en este caso fue **TDD** , en los módulos que se utili
 También hemos usado **Scrum** como marco de trabajo durante todo el proyecto.
 
 # Descripción técnica
+## Not list
+
+| **In Scope** | **Out of Scope** | **Unresolved** |
+|--------------|------------------|----------------|
+| El jugador elige la combinación de colores de la solución | Pedir el input de una forma más visual  | - |
+| Los resultados aparecen de forma gráfica | Usar html y css para representarlos | - |
+| Mostrar la evolución del fitness medio con una gráfica| lmostrar una gráfica con la evolución de la población según los colores | - |
+
 ## Historias de usuario
 
 Para las historias de usuario hemos usado la herramienta que da GitHub de "Projects" para ver nuestras historias de usuarios y poder planificarlas apropiadamente. 
@@ -109,6 +117,8 @@ Las historias de usuarios son las siguientes:
     - **Matplotlib**: librería externa empleada para la visualización de datos y resultados.
 
 - <u>**Markdown**</u>
+
+- <u>**Ruff**</u>
 
 # Conclusión
 
